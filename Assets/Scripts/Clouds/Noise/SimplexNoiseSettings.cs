@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
+//Simplex noise is the result of an n-dimensional noise function comparable to Perlin noise ("classic" noise) but with fewer
+//directional artifacts, in higher dimensions, and a lower computational overhead. Ken Perlin designed the algorithm in 2001
+//to address the limitations of his classic noise function, especially in higher dimensions. 
 public class SimplexNoiseSettings : NoiseSettings {
 
     public int seed;
