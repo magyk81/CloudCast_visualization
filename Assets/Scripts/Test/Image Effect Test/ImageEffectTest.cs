@@ -31,7 +31,7 @@ public class ImageEffectTest : MonoBehaviour {
         material.SetFloat ("DensityMultiplier", densityMultiplier);
         material.SetInt ("NumSteps", numSteps);
         // Set noise textures:
-        var noise = FindObjectOfType<NoiseGenerator> ();
+        var noise = FindFirstObjectByType<NoiseGenerator> ();
         material.SetTexture ("ShapeNoise", noise.shapeTexture);
         material.SetTexture ("DetailNoise", noise.detailTexture);
 

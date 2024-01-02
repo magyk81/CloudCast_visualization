@@ -24,7 +24,7 @@ public class FPSTest : MonoBehaviour {
             foreach (var g in disableWhenActive) {
                 g.SetActive (false);
             }
-            cam = FindObjectOfType<Camera> ().transform;
+            cam = FindFirstObjectByType<Camera> ().transform;
             for (int i = 0; i < waypoints.Length - 1; i++) {
                 totalDst += Vector3.Distance (waypoints[i].position, waypoints[i + 1].position);
             }

@@ -36,5 +36,6 @@
     "url": "https://github.cds.internal.unity3d.com/unity/com.unity.testtools.codecoverage.git",
     "type": "git",
     "revision": "a7dd0751db55cd55e3b336723fb51433c1de7244"
-  }
+  },
+  "_fingerprint": "fd8eb4b4ddb5123ee0c39dfc3ed9b66004427011"
 }

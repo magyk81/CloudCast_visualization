@@ -58,7 +58,7 @@ public class CloudMaster : MonoBehaviour {
     public Material material;
 
     void Awake () {
-        var weatherMapGen = FindObjectOfType<WeatherMap> ();
+        var weatherMapGen = FindFirstObjectByType<WeatherMap> ();
         if (Application.isPlaying) {
             weatherMapGen.UpdateMap ();
         }
@@ -74,7 +74,7 @@ public class CloudMaster : MonoBehaviour {
         numStepsLight = Mathf.Max (1, numStepsLight);
 
         // Noise
-        var noise = FindObjectOfType<NoiseGenerator> ();
+        var noise = FindFirstObjectByType<NoiseGenerator> ();
         noise.UpdateNoise ();
 
         material.SetTexture ("NoiseTex", noise.shapeTexture);
@@ -82,7 +82,7 @@ public class CloudMaster : MonoBehaviour {
         material.SetTexture ("BlueNoise", blueNoise);
 
         // Weathermap
-        var weatherMapGen = FindObjectOfType<WeatherMap> ();
+        var weatherMapGen = FindFirstObjectByType<WeatherMap> ();
         if (!Application.isPlaying) {
             weatherMapGen.UpdateMap ();
         }
@@ -137,8 +137,8 @@ public class CloudMaster : MonoBehaviour {
 
     void SetDebugParams () {
 
-        var noise = FindObjectOfType<NoiseGenerator> ();
-        var weatherMapGen = FindObjectOfType<WeatherMap> ();
+        var noise = FindFirstObjectByType<NoiseGenerator> ();
+        var weatherMapGen = FindFirstObjectByType<WeatherMap> ();
 
         int debugModeIndex = 0;
         if (noise.viewerEnabled) {
