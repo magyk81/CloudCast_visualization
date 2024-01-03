@@ -12,6 +12,9 @@ public class FirstPersonMovement : MonoBehaviour
     [SerializeField]
     private float travelSpeed = 10, hasteFactor = 5, extraHasteFactor = 3, dampFactor = 5, lookSensitivity = 100;
 
+    [SerializeField]
+    private RectTransform orientationImage;
+
     private enum USER_KEY_CONTROL {
         LEFT, RIGHT, FORWARD, BACKWARD, ASCEND, DESCEND, HASTEN, DAMPEN
     }
@@ -26,7 +29,7 @@ public class FirstPersonMovement : MonoBehaviour
 
     // Start is called before the first frame update.
     void Start() {
-        
+        Cursor.visible = false;
     }
 
     // Update is called once per frame.
@@ -43,7 +46,9 @@ public class FirstPersonMovement : MonoBehaviour
             Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl);
         
         mouseMoveAxis = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-        Debug.Log(mouseMoveAxis);
+        
+        // Orient image in the HUD to match the camera's orientation relative to the ground.
+        orientationImage.localEulerAngles = new Vector3(0, 0, -transform.eulerAngles.x);
     }
 
     void FixedUpdate() {
@@ -76,5 +81,8 @@ public class FirstPersonMovement : MonoBehaviour
             transform.position, transform.up, mouseMoveAxis.x * lookSensitivity * Time.deltaTime);
         transform.RotateAround(
             transform.position, transform.right, -mouseMoveAxis.y * lookSensitivity * Time.deltaTime);
+        
+        // Keep camera oriented perpendicular to the ground.
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0);
     }
 }
