@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b5960ea2fb9647c46bfda7efd4fccfa0
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 152685
+  packageName: Analogical Flight Instruments - GUI & Code
+  packageVersion: 1.1
+  assetPath: Assets/MGAssets/CameraAircraft/CameraAircraft_DemoScene.unity
+  uploadId: 507254

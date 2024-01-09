@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e5c01ea251f739e47a60f6d0dd338b5f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 152685
+  packageName: Analogical Flight Instruments - GUI & Code
+  packageVersion: 1.1
+  assetPath: Assets/MGAssets/ToolsScripts/MoveFuObj.cs
+  uploadId: 507254

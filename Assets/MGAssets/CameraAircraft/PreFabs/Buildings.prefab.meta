@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 10a183b4289b99a4f9429373c9a58c1f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 152685
+  packageName: Analogical Flight Instruments - GUI & Code
+  packageVersion: 1.1
+  assetPath: Assets/MGAssets/CameraAircraft/PreFabs/Buildings.prefab
+  uploadId: 507254

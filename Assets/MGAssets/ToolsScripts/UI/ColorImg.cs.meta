@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: fe7af4d1f7f7cd34fb53a15dcf9b49d1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 152685
+  packageName: Analogical Flight Instruments - GUI & Code
+  packageVersion: 1.1
+  assetPath: Assets/MGAssets/ToolsScripts/UI/ColorImg.cs
+  uploadId: 507254

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 635cc0ae44c55a64e83be012b9e26cd7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 152685
+  packageName: Analogical Flight Instruments - GUI & Code
+  packageVersion: 1.1
+  assetPath: Assets/MGAssets/CameraAircraft/Materials/Building2.mat
+  uploadId: 507254

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: dadca3f797160b94aaa47a0a11270f68
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 152685
+  packageName: Analogical Flight Instruments - GUI & Code
+  packageVersion: 1.1
+  assetPath: Assets/MGAssets/ToolsScripts/DebugTools.cs
+  uploadId: 507254

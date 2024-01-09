@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 200954a059d22c74bba63324f9da1366
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 152685
+  packageName: Analogical Flight Instruments - GUI & Code
+  packageVersion: 1.1
+  assetPath: Assets/MGAssets/AnalogicalFI/Prefabs/Compact_AFI_Canvas.prefab
+  uploadId: 507254

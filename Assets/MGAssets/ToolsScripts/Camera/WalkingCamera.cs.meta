@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: daf6b7a00f30cea42b1d1c5b8bfa6bed
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 152685
+  packageName: Analogical Flight Instruments - GUI & Code
+  packageVersion: 1.1
+  assetPath: Assets/MGAssets/ToolsScripts/Camera/WalkingCamera.cs
+  uploadId: 507254

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: df3ac0899cad1a140ad44dc6b682c540
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 152685
+  packageName: Analogical Flight Instruments - GUI & Code
+  packageVersion: 1.1
+  assetPath: Assets/MGAssets/CameraAircraft/Materials/Wood.mat
+  uploadId: 507254

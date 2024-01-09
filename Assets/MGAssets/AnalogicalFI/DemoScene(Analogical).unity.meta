@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: eee8178b4d1f1a74a81bb725d475a4fd
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 152685
+  packageName: Analogical Flight Instruments - GUI & Code
+  packageVersion: 1.1
+  assetPath: Assets/MGAssets/AnalogicalFI/DemoScene(Analogical).unity
+  uploadId: 507254

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3a86f88e13b85494691b5cbe72c8a695
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 152685
+  packageName: Analogical Flight Instruments - GUI & Code
+  packageVersion: 1.1
+  assetPath: Assets/MGAssets/AnalogicalFI/Prefabs/Floating_AFI_Canvas.prefab
+  uploadId: 507254
