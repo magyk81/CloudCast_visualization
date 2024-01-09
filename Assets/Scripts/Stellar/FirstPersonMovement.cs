@@ -47,8 +47,17 @@ public class FirstPersonMovement : MonoBehaviour
         
         mouseMoveAxis = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
         
+        transform.RotateAround(
+            transform.position, transform.up, mouseMoveAxis.x * lookSensitivity * Time.deltaTime);
+        transform.RotateAround(
+            transform.position, transform.right, -mouseMoveAxis.y * lookSensitivity * Time.deltaTime);
+        
+        // Keep camera oriented perpendicular to the ground.
+        transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0);
+
         // Orient image in the HUD to match the camera's orientation relative to the ground.
-        orientationImage.localEulerAngles = new Vector3(0, 0, -transform.eulerAngles.x);
+        float pitchOrientation = (transform.eulerAngles.x > 90 ? transform.eulerAngles.x - 360 : transform.eulerAngles.x) * 717 / 90;
+        orientationImage.localPosition = new Vector3(0, pitchOrientation, 0);
     }
 
     void FixedUpdate() {
@@ -76,13 +85,5 @@ public class FirstPersonMovement : MonoBehaviour
             transform.localPosition += transform.up * travelSpeedPerFrame;
         if (keyCommands[(int) USER_KEY_CONTROL.DESCEND])
             transform.localPosition -= transform.up * travelSpeedPerFrame;
-        
-        transform.RotateAround(
-            transform.position, transform.up, mouseMoveAxis.x * lookSensitivity * Time.deltaTime);
-        transform.RotateAround(
-            transform.position, transform.right, -mouseMoveAxis.y * lookSensitivity * Time.deltaTime);
-        
-        // Keep camera oriented perpendicular to the ground.
-        transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0);
     }
 }
