@@ -63,7 +63,7 @@ public class FirstPersonMovement : MonoBehaviour
         orientationImage.localPosition = new Vector3(0, pitchOrientation, 0);
 
         float directionValue = (transform.eulerAngles.y > 180
-            ? transform.eulerAngles.y - 360 : transform.eulerAngles.y) * -2530 / 90;
+            ? transform.eulerAngles.y - 360 : transform.eulerAngles.y) * -2530 / 180;
         // Debug.Log(transform.eulerAngles.y);
         directionImage.localPosition = new Vector3(directionValue, directionImagePositionY, 0);
     }
