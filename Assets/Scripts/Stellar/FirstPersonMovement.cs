@@ -13,7 +13,7 @@ public class FirstPersonMovement : MonoBehaviour
     private float travelSpeed = 10, hasteFactor = 5, extraHasteFactor = 3, dampFactor = 5, lookSensitivity = 100;
 
     [SerializeField]
-    private RectTransform orientationImage;
+    private RectTransform orientationImage, directionImage;
 
     private enum USER_KEY_CONTROL {
         LEFT, RIGHT, FORWARD, BACKWARD, ASCEND, DESCEND, HASTEN, DAMPEN
@@ -26,10 +26,12 @@ public class FirstPersonMovement : MonoBehaviour
     private bool[] keyCommands = new bool[Enum.GetValues(typeof(USER_KEY_CONTROL)).Length];
 
     private Vector2 mouseMoveAxis;
+    private float directionImagePositionY;
 
     // Start is called before the first frame update.
     void Start() {
         Cursor.visible = false;
+        directionImagePositionY = directionImage.localPosition.y;
     }
 
     // Update is called once per frame.
@@ -56,8 +58,14 @@ public class FirstPersonMovement : MonoBehaviour
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0);
 
         // Orient image in the HUD to match the camera's orientation relative to the ground.
-        float pitchOrientation = (transform.eulerAngles.x > 90 ? transform.eulerAngles.x - 360 : transform.eulerAngles.x) * 717 / 90;
+        float pitchOrientation = (transform.eulerAngles.x > 90 
+            ? transform.eulerAngles.x - 360 : transform.eulerAngles.x) * 717 / 90;
         orientationImage.localPosition = new Vector3(0, pitchOrientation, 0);
+
+        float directionValue = (transform.eulerAngles.y > 180
+            ? transform.eulerAngles.y - 360 : transform.eulerAngles.y) * -2530 / 90;
+        // Debug.Log(transform.eulerAngles.y);
+        directionImage.localPosition = new Vector3(directionValue, directionImagePositionY, 0);
     }
 
     void FixedUpdate() {
